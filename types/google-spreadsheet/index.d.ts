@@ -548,6 +548,8 @@ export class GoogleSpreadsheetRow {
      * delete this row
      */
     delete(): Promise<void>;
+    moveRows(movedRows:number[], destination:GoogleSpreadsheetWorksheet): promsie<void>;
+    deleteRows(deletedRows:number[]): Promise<void>;
 }
 
 // #endregion
